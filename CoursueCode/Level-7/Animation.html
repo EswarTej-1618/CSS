@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations</title>
+    <style>
+        .box{
+            height: 100px;
+            width:100px;
+            border: 2px solid black;
+            border-radius: 1.5em;
+            background-color: greenyellow;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            text-align: center;
+            font-family: cursive;
+            animation-name: gostraight;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation: gostraight 10s ease-in-out 1s infinate  alternate; */
+        }
+        /* animation */
+        @keyframes gostraight{
+            from{left:50px;}/* if we want we an divide it in to percentage see notes */
+            to{left: 1100px;}
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="box">Animate</div>
+</body>
+</html>

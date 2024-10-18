@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative unit:Em and rem</title>
+    <style>
+        #first{
+            height: 100px;
+            width:200px;
+            background-color: red;
+            font-size: 10px;
+            
+        }
+        /*  here em means times the parent 2em==twice the parent for text size 
+         rem is all about the comparison with root element or the universal defined element in css almost em and rem are same! */
+        #second{
+            width: 50%;
+            height: 60%;
+            background-color:royalblue;
+            font-size: 2.25em;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        First div 
+        <div id="second">Second div</div>
+    </div>
+    
+</body>
+</html>

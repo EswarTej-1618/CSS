@@ -1,0 +1,45 @@
+#Container{
+    height: 550px;
+    width: 1000px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black; 
+    border-radius: 2em;
+    background-color: bisque;
+    /* this is the property of flex which is imp  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+ }
+ h1{
+  text-align: center;
+ }
+ .box{
+     height: 200px;
+     width: 200px;
+     border: 3px solid black;
+     border-radius: 2em;
+     margin: 5px;
+     text-align: center;
+     font-weight: bold;
+     font-family:serif;
+ }
+ #box1{background-color: aqua;
+order: 3;}
+ #box2{background-color: blueviolet;
+    /* flex-shrink:0.2; */
+    order: 4;
+
+}
+ #box3{background-color:yellow;
+    /* align-self: flex-end;} */
+order: 1;}
+ #box4{background-color: tomato;
+/* flex-grow: 2; */
+order: 2;
+
+}
+
+ 
+ 

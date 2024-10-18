@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Button With Transition</title>
+   <style>
+   #background{
+       height: 600px;
+       width: 1245px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: 3px solid black;
+       border-radius: 4em;
+       background-color: khaki;
+   }
+  .Pseudo{
+           height: 50px;
+           width:150px;
+           background-color: forestgreen;
+           border-radius: 1.5em; 
+           font-family: cursive;
+           font-weight: bold;
+           transition-property: all;
+           transition-duration: 3s;
+           transition-timing-function: ease;
+           transition-delay:0.5s;
+           /* short hand of transition for above code must be in the same format*/
+           /* transition:all 3s ease 0.5s */
+  }
+  .Pseudo:hover{
+   background-color:lightcoral;
+   height:100px;
+   width: 175px;
+   border-radius: 2em;
+   font-size: larger;
+  }/* in this transition state hover property is not working */
+  .Pseudo:active{
+   background-color:red;
+  }
+
+   </style>
+</head>
+<body>
+<div id="background">
+  <button class="Pseudo"> Learning Pseudo</button> 
+  </div>
+</body>
+</html>

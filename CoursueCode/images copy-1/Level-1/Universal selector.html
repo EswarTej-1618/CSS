@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal selector</title>
+</head>
+<style>
+    /* syntax of universal selector .. "*" */
+    * {
+       color: chartreuse ;            
+    }
+    /* priority is least when if we apply any other css to the text then it will show that want we defined in the other  */
+    h1
+      {
+        color: darkred; 
+      }
+    /* here the unniversal selsctor not worked because we used another selsctor */
+</style>
+
+<body>
+    <h1> hello guys</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel voluptas praesentium nobis error libero atque quas non, quis totam id ab tempore ad, ipsa qui excepturi rem. Praesentium, perspiciatis.</p>
+    <p> this is example of css universal selector!!!</p>
+</body>
+</html>
